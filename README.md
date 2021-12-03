@@ -6,7 +6,7 @@ Calculation "real" birthday.
 
 ## Usage
 
-Hosted as a GitHub Page at https://smmilut.github.io/birthdaycalc/
+Hosted as a GitHub Page at https://smmilut.github.io/birthdaycalculator/
 
 ## Privacy
 
