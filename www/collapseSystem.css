@@ -1,0 +1,34 @@
+.collapsed {
+    display: none;
+}
+
+.clicktouncollapse {
+    font-style: italic;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.clicktouncollapse::before {
+    /* squared plus &#x229E */
+    content: "\229E";
+    font-style: normal;
+    font-size: 50%;
+    padding-right: 10px;
+    vertical-align: middle;
+    color: #aaa;
+}
+
+.clicktocollapse {
+    font-style: normal;
+    cursor: pointer;
+}
+
+.clicktocollapse::before {
+    /* squared minus &#8863 or &#x229F */
+    content: "\229F ";
+    font-style: normal;
+    font-size: 50%;
+    padding-right: 10px;
+    vertical-align: middle;
+    color: #aaa;
+}

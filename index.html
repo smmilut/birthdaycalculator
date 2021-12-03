@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Calculator</title>
+    <meta name="description" content="calculate birthdays">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="www/theme_common.css" rel="stylesheet">
+    <link href="www/index.css" rel="stylesheet">
+    <link href="www/collapseSystem.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header class="box">
+            <h1 class="clickcollapse clicktouncollapse">Birthday Calculator</h1>
+            <div class="collapsed">
+                <p>If you are born on February 29th, when are your birthdays ?</p>
+                <p>Calendars are convenient approximations for the two main movements of our planet Earth : rotation
+                    around
+                    its own axis (what we call "<em>days</em>"), and revolution around the Sun (what we call
+                    "<em>years</em>").</p>
+                <p>In nature, those two movements happen completely independently. <strong>There is no way a year can be
+                        made of an exact number of days.</strong></p>
+                <p>As a consequence, we can choose two different definitions for "birthdays" :</p>
+                <ol>
+                    <li>Celebrate when the calendar happens to display the same date numbers for day and month. If you
+                        are
+                        not born on February 29th, this is convenient and approximately correct.</li>
+                    <li>Celebrate when the Earth has made an exact number of revolutions around the Sun. This is harder
+                        to
+                        calculate, and you can find the results on this page.</li>
+                </ol>
+                <p>A funny consequence of calculating birthdays with the second method : your birthday will sometimes
+                    happen
+                    on a different calendar day. This time for everybody, not just the unlucky February 29th people.</p>
+                <p>To understand, remember that on leap years the calendar year is suddenly 1 day longer. So when you
+                    celebrate using the calendar (method <em>1.</em>) you are actually 1 year + 1 day old, <strong>oops wrong day for the
+                    party !</strong></p>
+                <p>See <a href="https://en.wikipedia.org/wiki/Sidereal_year">sidereal year</a>, <a
+                        href="https://hpiers.obspm.fr/eop-pc/models/constants.html#rotation">reference</a>.</p>
+            </div>
+        </header>
+
+        <div id="inputbox" class="box">
+            <div>
+                <p>Pick a birth date and time (you may need to use the keyboard) :</p>
+                <input type="datetime-local" id="birthdatetime">
+            </div>
+            <div id="ouputDayBorn"></div>
+        </div>
+        <div id="resultbox" class="box"></div>
+
+        <footer id="infosbox" class="box">
+            <p>See Github for : <a href="https://github.com/smmilut/birthdaycalculator" target="_blank">code</a>, <a
+                    href="https://github.com/smmilut/birthdaycalculator/blob/main/LICENSE" target="_blank">license</a>,
+                <a href="https://github.com/smmilut/birthdaycalculator/blob/main/README.md" target="_blank">privacy</a>.
+            </p>
+        </footer>
+    </div>
+    <script src="www/index.js" type="module"></script>
+</body>
+
+</html>
